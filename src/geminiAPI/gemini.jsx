@@ -23,7 +23,6 @@ async function gemini(input) {
       });
 
       const result = await chatSession.sendMessage(input);
-      console.log(result.response.text());
       return result.response.text();
 }
 
